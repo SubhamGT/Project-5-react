@@ -1,0 +1,18 @@
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 30px 120px;
+    background-image: url(../.././img/LOGO.png);
+    background-size: contain; /* ou cover selon le besoin */
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 50px;
+
+ }
+
+
+
+.navigation li {
+    padding: 0 40px;
+}

@@ -1,0 +1,18 @@
+$color-1: rgb(254,96,97);
+$color-2: rgb(64,64,64);
+$color-3: rgb(255,254,254);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ overflow-x: hidden;
+}
+body{
+    margin: 0 auto;
+    max-width: 1440px;
+    max-height: 1517px;
+}
+li{
+    list-style: none;
+}

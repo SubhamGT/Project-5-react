@@ -1,0 +1,44 @@
+.lc {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color:rgb(246,246,246);
+    padding: 50px 20px;
+    border-radius: 8px;
+    margin: 50px auto;
+}
+
+.Location {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.logement-card {
+    position: relative; /* Permet de positionner les éléments enfants de façon absolue */
+}
+
+.image-container {
+    position: relative; /* Parent en position relative pour que l'élément enfant puisse se placer en absolu */
+}
+
+.image-container img {
+    width: 90%;
+    height: 300px;
+}
+.logement-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.logement-title {
+    position: absolute;
+    bottom: 10px; /* Place le titre à 10px du bas de l'image */
+    left: 10px; /* Place le titre à 10px du côté gauche */
+    color: white; /* Pour que le texte soit lisible sur l'image */
+    background-color: rgba(0, 0, 0, 0.1); /* Fond noir semi-transparent */
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 80%;
+}
