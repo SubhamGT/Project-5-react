@@ -1,15 +1,15 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'; // Assure-toi d'avoir importé NavLink
-import data from '../logements.json'; // Vérifie le chemin vers le fichier JSON
+import { NavLink } from 'react-router-dom'; // Ensure you've imported NavLink
+import data from '../logements.json'; // Check the path to the JSON file
 
 const LogementList = () => {
   return (
     <div className="lc">
       <div className="Location">
-        {data.slice(0, 6).map((logement) => (
+        {data.map((logement) => (
           <div key={logement.id} className="logement-card">
             <div className="image-container">
-              {/* Lien vers la fiche détaillée du logement */}
+              {/* Link to the detailed fiche of the accommodation */}
               <NavLink to={`/FicheLogement/${logement.id}`}>
                 <img
                   src={logement.cover}
@@ -18,6 +18,8 @@ const LogementList = () => {
                 />
                 <h2 className="logement-title">{logement.title}</h2>
               </NavLink>
+              {/* Displaying the location under the title */}
+           
             </div>
           </div>
         ))}

@@ -1,7 +1,12 @@
+body{
+   height: 100%;
+}
+
 .errb {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 150px 0 200px;
 }
 
 .err h1{
@@ -13,4 +18,21 @@
 .err h2 {
     padding: 30px;
     color: rgb(254,96,97);
+}
+
+.err button {
+    border: none;
+background-color: white;
+cursor: pointer;
+}
+@media (max-width: 768px) {
+   .err h1{  font-size: 120px;
+
+}
+.err h2 {
+
+    font-size: 27px;
+    text-align: center; /* Centre le texte horizontalement */
+}
+
 }

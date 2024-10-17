@@ -1,0 +1,73 @@
+.carousel {
+  position: relative;
+  width: 100%; /* Prend toute la largeur disponible */
+  max-width: 1000px; /* Largeur maximale du carrousel */
+  margin: auto; /* Centre le carrousel */
+  overflow: hidden; /* Cache le débordement des images */
+}
+
+.carouselc {
+ 
+  width: 100%; /* Assure que le carrousel prend toute la largeur */
+}
+
+.carousel-track {
+  display: flex; /* Aligne les images côte à côte */
+  transition: transform 0.6s ease-in-out; /* Transition fluide entre les images */
+}
+
+.carousel-image {
+  width: 100%; /* S'adapte à la largeur de l'élément parent */
+  height: auto; /* Ajuste la hauteur pour maintenir le ratio */
+  max-height: 400px; /* Hauteur maximale pour les images */
+  object-fit: cover; /* Couvre l'espace tout en gardant le ratio */
+  flex-shrink: 0; /* Empêche la réduction de la taille des images */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%; /* Centre verticalement */
+  transform: translateY(-50%); /* Ajuste pour un centrage parfait */
+  background: transparent; /* Fond transparent */
+  border: none; /* Pas de bordure */
+  cursor: pointer; /* Pointeur au survol */
+  font-size: 50px; /* Ajuste la taille des flèches (modifiez selon vos besoins) */
+  color: whitesmoke; /* Couleur des flèches */
+  padding: 10px; /* Espace autour des flèches */
+  z-index: 1; /* S'assurer que les boutons soient au-dessus des images */
+}
+
+.carousel-button:first-of-type {
+  left: 10px; /* Positionne le bouton gauche */
+}
+.carousel-indicator {
+  position: absolute;
+  bottom: 10px; /* Positionne en bas */
+  left: 50%;
+  transform: translateX(-50%); /* Centré horizontalement */
+
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.carousel-button:last-of-type {
+  right: 10px; /* Positionne le bouton droit */
+}
+
+/* Styles additionnels pour assurer la réactivité */
+@media (max-width: 768px) {
+  .carousel-button {
+    font-size: 40px; /* Réduit la taille des boutons sur les petits écrans */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-button {
+    font-size: 30px; /* Encore plus petit sur les très petits écrans */
+  }
+  .carousel-indicator{
+    display: none;
+  }
+}

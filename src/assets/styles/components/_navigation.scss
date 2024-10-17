@@ -2,17 +2,58 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 30px 120px;
     background-image: url(../.././img/LOGO.png);
-    background-size: contain; /* ou cover selon le besoin */
+    background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
     height: 50px;
-
- }
-
-
-
-.navigation li {
-    padding: 0 40px;
+    width: 100%; 
 }
+.navc {
+    display: flex;
+    justify-content: space-between; /* Pour espacer le logo et les liens */
+    align-items: center; /* Centrage vertical */
+    padding: 20px 0px 40px; /* Ajoute du padding pour l'espacement */
+    max-width: 1200px;
+    margin: 0 auto; /* Pour centrer le contenu dans la page */
+}
+
+.navigation {
+    display: flex;
+    gap: 20px; /* Espacement entre les éléments */
+}
+
+
+.navigation a{
+    color: black;
+    text-decoration: underline;
+}
+.navc img { 
+    height: 50px; /* Ajustement de la taille du logo si nécessaire */
+}
+.navigation a {
+    color: black;
+    text-decoration: none;
+}
+
+.navigation a.aktive {
+    color: black; 
+    text-decoration: none; 
+    border-bottom: 2px solid black; 
+}
+
+
+@media (max-width: 768px) {
+    .navc {
+        flex-direction: column; /* Passe les éléments sur une colonne en vue mobile */
+        align-items: center; /* Centre les éléments */
+    }
+
+    .navigation {
+        flex-direction: row; /* Les liens restent en ligne */
+        justify-content: center;
+        gap: 10px; /* Espacement plus petit en mobile */
+    }
+}
+
+

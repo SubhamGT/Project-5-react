@@ -1,36 +1,93 @@
-
-.tete {
-    background-image: url(../../img/BG.png);
-    background-color: black;
-    background-repeat: no-repeat;
-    background-size:1200px ;
-    width: 1200px;
-    max-width: 100%;
-    height: 150px;
-    border-radius: 17px;
-    text-align: center;
-    padding: 50px;
-    font-size: 23px;
-    letter-spacing: 2px;
-     margin: 0 auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
-    position: relative;
-}
-.hcont{
-    background: rgba(0,0,0,0.3) 100%;
-    position: absolute;
+body {
+    min-height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 17px;
+    flex-direction: column;
+    
+  }
+  .acc{
+    overflow-y: none;
+
+  }
+  .tete {
+      background-image: url(../../img/BG.png);
+      background-color: black;
+      background-repeat: no-repeat;
+      background-size: 1200px;
+      width: 1200px;
+      max-width: 100%;
+      height: 185px;
+      border-radius: 17px;
+      text-align: center;
+      padding: 40px;
+      font-size: 30px;
+      letter-spacing: 1px; 
+      margin: 0 auto;
+    
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+      position: relative;
+     
+  }
+  
+  .hcont {
+      background: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 17px;
+  }
+  
+  .hcont h1 {
+      color: whitesmoke;
+      z-index: 1;
+      font-size: 2.65rem; 
+  }
+  
+ 
+  .image-container img {
+    max-width: 100%;
+      height: 363px;
+      object-fit: cover; 
+      border-radius: 10px; 
+  }
+  
+
+  @media (max-width: 768px) {
+
+
+    body {
+        overflow-x: hidden; /* Empêche le débordement horizontal sur le body */
+    }
+.tete{
+    margin: 0 0% 0 ;
 }
-h1{
-    color: whitesmoke;
-    z-index: 1; 
+    .navigation {
+justify-content: flex-end;
+padding-right: 1%;
+gap: 5%;
+
+    }
+
+    .hcont h1 {
+        font-size: 2rem; /* Garder la taille du texte, mais assure-toi qu'il ne dépasse pas */
+    }
+
+    .acc {
+        margin-left: 0; /* Ajuste ou supprime le margin selon tes besoins */
+        padding: 10px 20px;
+    }
+    .tete{
+        height: 120px;
+    }
+    .lc{
+        margin: 20px 0;
+        padding: 0 ;
+        background-color: transparent;
+    }
    
-}
-//.map pour apller le json et objectif fit cover pour le css
+  }
+  

@@ -1,0 +1,47 @@
+.description-equipments-container {
+  display: flex;
+  gap: 20px; /* Ajoute un espace entre les éléments */
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+}
+
+.title {
+  background-color: rgb(254, 96, 97);
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Pour espacer la flèche et le texte */
+}
+
+.chevron-icon {
+  transition: transform 0.3s ease;
+  transform: rotate(270deg); /* Flèche dirigée vers la droite par défaut */
+}
+
+.chevron-icon.rotate {
+  transform: rotate(90deg); /* Flèche vers le bas quand actif */
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  transition: max-height 0.2s ease-out, padding 0.2s ease-out;
+}
+
+.content.active {
+  max-height: 200px; /* Ajustez selon la taille de votre contenu */
+  padding: 15px 20px;
+  transition: max-height 0.4s ease-in, padding 0.4s ease-in;
+}
+
+.content p {
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+

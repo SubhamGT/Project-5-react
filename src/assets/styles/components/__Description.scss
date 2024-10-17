@@ -1,0 +1,33 @@
+// src/assets/styles/components/_Carousel.scss
+.carousel {
+  position: relative;
+  width: 100%; /* Use full width of the parent */
+  max-width: 1400px; /* Adjust this to your desired width */
+  margin: auto; /* Center the carousel */
+  overflow: hidden; /* Hide overflow if images go beyond the container */
+}
+
+.carousel-image {
+  width: 100%; /* Fill the width of the carousel */
+  height: 500px; /* Set a consistent height */
+  object-fit: cover; /* Cover the area without distortion */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+.carousel-button:first-of-type {
+  left: 10px; /* Position for the left arrow */
+}
+
+.carousel-button:last-of-type {
+  right: 10px; /* Position for the right arrow */
+}

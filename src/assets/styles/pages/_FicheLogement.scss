@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.alc {
+  padding: 10px 20px;
+    max-width: 1200px; /* Limite la largeur pour s'aligner avec les autres éléments */
+    margin: 0 auto; /* Centre l'élément dans la page */
+}
+.imglog {
+  width: 100%; /* Le conteneur imglog prend toute la largeur disponible */
+}
+
+
+.imgcont {
+  display: flex;
+  justify-content: center; /* Centre l'image horizontalement */
+  width: 100%; /* L'image occupe 90% de la largeur de imglog */
+  margin: 0 auto; /* Centrer le conteneur imgcont */
+}
+
+.imgcont img {
+  width: 100%; /* L'image occupe toute la largeur de imgcont */
+  height: 500px; /* Ajuste la hauteur de l'image selon tes besoins */
+  object-fit: cover; /* Maintient les proportions de l'image tout en la rognant si nécessaire */
+  border-radius: 10px; /* Ajoute un peu de bordure arrondie pour un effet stylé */
+}
+.togc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* Crée deux colonnes de taille égale (50% / 50%) */
+  gap: 20px; /* Ajoute un espace de 20px entre les colonnes */
+
+}
+
+
+.description-container, .equipments-container {
+  padding: 15px;
+  background-color: rgb(254, 96, 97);
+  border-radius: 8px;
+  color: whitesmoke;
+}
+
+.description-container {
+  max-height: 500px; /* Limite la hauteur de la description */
+  overflow-y: auto; /* Ajoute un défilement si le contenu dépasse */
+}
+
+.equipments-container {
+  max-height: 500px; /* Limite la hauteur des équipements */
+  overflow-y: auto; /* Ajoute un défilement si le contenu dépasse */
+}
+
+/* Le style pour chaque toggle */
+.item {
+ 
+  border-radius: 25px;
+  transition: box-shadow 0.3s ease;
+}
+
+
+
+.title {
+  background-color: rgb(254, 96, 97);
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+}
+
+.title::after {
+
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.title.active::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  transition: max-height 0.2s ease-out, padding 0.2s ease-out;
+}
+
+.content.active {
+  max-height: 200px; /* Ajustez selon la taille de votre contenu */
+  padding: 15px 20px;
+  transition: max-height 0.4s ease-in, padding 0.4s ease-in;
+}
+
+.content p {
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1850px; // Ajustez selon vos besoins
+
+}
+
+.carousel-inner {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; // Ajoutez des coins arrondis si nécessaire
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-button {
+  background-color: none;
+}
+
+.carousel-control.prev {
+  left: 10px; // Position de la flèche précédente
+}
+
+.carousel-control.next {
+  right: 10px; // Position de la flèche suivante
+}
+.carouselc {
+
+  border-radius: 18px;
+}
+
+.carouselc img {
+  border-radius: 18px;
+}
+
+
+
+.host-info h2{
+  font-size: 2.1rem;
+  color:rgb(254, 96, 97);
+}
+.hostp{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color:rgb(254, 96, 97);
+  font-size: 1.2rem;
+gap: 10px;
+}
+.rrating{
+  display: flex;
+justify-content: flex-end;
+}
+.rating{
+  display: flex;
+  flex-direction: row-reverse;
+ justify-content: space-between; 
+}
+
+.hostp img {
+  width: 120px; /* Taille de l'image */
+  height: 120px; /* Assure un cercle parfait */
+  border-radius: 50%; /* Forme ronde */
+  object-fit: cover; /* Ajuste l'image */
+  margin-left: auto; /* Décale l'image vers la droite */
+}
+
+.titrea{
+display: flex;
+justify-content: space-between;
+margin: 18px 0;
+}
+.hc{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.hostnp{
+  display: flex;
+  align-items: center;
+}
+.star {
+  font-size: 34px; 
+  color: lightgray; 
+  display: inline-block;
+  margin-right: 5px;
+}
+.star.filled {
+  color:rgb(254, 96, 97); 
+}
+
+.tagas{
+  display: flex;
+flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.tags-container {
+  display: flex;
+}
+.lefta h3{
+  margin: 18px 0;
+}
+
+
+.tags-container h4{
+padding: 5px 50px;
+}
+
+.togc{
+  margin-bottom: 90px;
+}
+
+/* Appliquer à tout le document */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Le body prend au moins toute la hauteur de la fenêtre */
+}
+
+.main-content {
+  flex: 1; /* Prend tout l'espace restant, poussant le footer vers le bas */
+}
+
+/* Style pour le footer */
+footer {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  color: white;
+  text-align: center;
+}
+
+/* Conteneur principal */
+.lc {
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: rgb(246, 246, 246);
+  padding: 20px 30px;
+  border-radius: 8px;
+
+  min-height: 400px; /* Remplacé height par min-height pour éviter des débordements */
+}
+
+/* Grille pour les logements */
+.Location {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+
+}
+
+.logement-card {
+  position: relative; /* Nécessaire pour positionner les éléments enfants */
+  
+}
+
+.image-container {
+  position: relative; /* Nécessaire pour que l'élément enfant puisse se placer en absolu */
+}
+
+.image-container img {
+  width: 100%;
+  height: 600px; /* Augmentée pour plus de hauteur */
+  object-fit: cover;
+}
+
+.logement-image {
+  width: 100%;
+  height: 600px; /* Augmentée pour plus de hauteur */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logement-title {
+  position: absolute;
+  bottom: 4px; 
+  left: 0; 
+  color: white; 
+  background-color: rgba(0, 0, 0, 0.3); 
+  padding: 8px 10px; 
+  font-size: 18px;
+  width: 100%;
+  border-radius: 0px 0px 8px 8px ;
+
+}
+
+/* Styles pour les tags */
+.tags-container div {
+  display: inline-block; /* Aligne les tags côte à côte */
+  margin: 7px; /* Espace autour de chaque bouton */
+  padding: 5px 0; /* Ajuste l'espace à l'intérieur des boutons */
+  min-width: 90px;
+  max-width: 200px; /* Fixe la largeur des boutons */
+  text-align: center; /* Centre le texte à l'intérieur du bouton */
+  background-color: rgb(254, 96, 97); 
+  color: whitesmoke; 
+  border-radius: 16px; 
+  font-size: 14px;
+  white-space: nowrap; /* Empêche le texte de se casser */
+  flex-wrap: wrap;
+}
+
+/* Style pour le titre des tags */
+.tags-container h4 {
+  padding: 5px 50px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+.Location {
+    grid-template-columns: 1fr; /* 1 colonne pour les petits écrans */
+}
+
+.image-container {
+width: 100%;
+}
+.titrea{
+  flex-direction: column;
+}
+.hc{
+  flex-direction: row-reverse;
+}
+.togc{
+  grid-template-columns: 1fr;
+}
+.tags-container {
+  width: 100%; 
+  flex-wrap: wrap;
+  overflow-y: hidden;
+  max-width: 320px;
+}
+
+.tags-container h4{
+  display: flex;
+  justify-content: center;
+align-items: center;
+  font-size: 10px; /* Taille de police plus petite pour petits écrans */
+  min-width: 50px; /* Réduit la largeur minimale pour petits écrans */
+}
+.hostp img{
+width: 60px;
+height: 60px;
+}
+.host-name{
+  font-size: 0.98rem;
+}
+.hc{
+  justify-content: space-between;
+}
+.star{
+  font-size: 1.8rem;
+}
+.rating{
+  align-items: center;
+}
+.pagelogement .navc{
+  padding: 10px 20px;
+}
+}

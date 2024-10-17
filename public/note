@@ -1,0 +1,31 @@
+// J'avais pour mission de faire un site vitrine de l'agance imobiliére kasa pour ce faire j'ai utiliser le bibiliothèque de js qui est React
+// et nous alons voir les point importent du site.
+//  je vous expliquerai comment j'ai procéder et la logique deriére la structure du site 
+// je vais d'abbord vous montrer le code qui est séparer en plusieur partie:
+
+// il y a node_modules qui s'installe quand on installe la librérie react,
+
+// il y a le public ou réside le html,
+
+// les assets il y a les image et le css qui est en sass pourquoi sass parceque pour la partie component il est plus faclile pour moi
+// de retrouver mon css ca aide a la lisibilité a savoir quel code est ou parceque sinon si on fait juste du css on fini avec des milier
+// de ligne de code on risquerai de se perdre 
+
+// il y a index.js ou on importe React, l'app et le sass ca permet de lier mon application réact a la stucture du dom html 
+// du navigateur
+
+// App.js contient la structure principale de mon application React et utilise 
+// React Router pour gérer la navigation entre différentes pages.
+// <BrowserRouter> : Ce composant enveloppe toute l'application et permet la gestion des routes en utilisant les URL du navigateur. Il crée un environnement de routage qui permet d'utiliser les liens et les chemins d'URL de manière fluide, sans recharger la page.
+
+// -------------------------------------------------------------------------------------------------------------------------------------------
+
+// Nous avons vu les paramétre du site maintenant alons voir  la partie avec les component
+
+// la page principal acceil il y a pas beacoup de ligne pourtant,
+// il y a beaucoup de chose sur la page d'acceuil pourquoi 
+// parceque j'ai utiliser divers component réutilisable que 
+// j'ai assemblé pour une meilleur lisibilité et un gain de temps.
+
+// commencons par la navigation et footer qui sont sur toute les pages j'ai rajouter des li pour pouvoir passer d'acceuil a 
+// apropos avec Navlink to ='' je l'ai fait grace a ce qu'on a vu précédament avec le rooter path qui est dans app.js sur les nav j'ai aussi mis une classactive ca sert a mette du style a la page qui est active 

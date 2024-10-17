@@ -1,0 +1,17 @@
+// Assuming you have this in your _FicheLogement.scss or a dedicated Equipements.scss file
+
+.equipments-content {
+  margin-top: 10px; // Adds some space above the list
+}
+
+.equipment-item {
+  background-color: #f0f0f0; // Light gray background
+  color: #333; // Dark text color
+  padding: 8px; // Adds some padding for better spacing
+  border-radius: 5px; // Rounded corners
+  margin: 5px 0; // Adds space between items
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+}
+.equipment-item p {
+  color: black;
+}

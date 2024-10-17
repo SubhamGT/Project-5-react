@@ -1,18 +1,40 @@
-$color-1: rgb(254,96,97);
-$color-2: rgb(64,64,64);
-$color-3: rgb(255,254,254);
+$color-1: rgb(254, 96, 97);
+$color-2: rgb(64, 64, 64);
+$color-3: rgb(255, 254, 254);
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
- overflow-x: hidden;
 }
-body{
-    margin: 0 auto;
-    max-width: 1440px;
-    max-height: 1517px;
+
+ body {
+min-height: 100vh;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+ }
+
+
+
+.page-container {
+    flex: 1; // Permet au conteneur de prendre tout l'espace restant
+    display: flex; // Utilise Flexbox à l'intérieur pour un alignement
+    flex-direction: column; // Colonne pour le contenu
+ 
 }
-li{
+
+header {
+    background-color: $color-2; // Exemple de couleur d'en-tête
+    padding: 20px; // Ajoute du padding
+}
+
+main {
+    flex: 1; // Prend tout l'espace disponible entre header et footer
+    padding: 20px; // Ajoute du padding au contenu principal
+    overflow-y: auto; // Permet le défilement uniquement dans le contenu principal si nécessaire
+}
+
+
+li {
     list-style: none;
 }

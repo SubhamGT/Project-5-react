@@ -1,23 +1,30 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
-import _Acceil from "../assets/styles/pages/_Acceil.scss"
+import _Acceil from "../assets/styles/pages/_Acceil.scss";
 import TitreLocation from '../components/TitreLocation';
-import  Loggr  from '../assets/styles/pages/Loggr.scss';
-import FichieLogement from './FicheLogement';
+import Foot from '../components/Foot'
+
 
 const Acceuil = () => {
     return (
-        <div>
-           <Navigation />
+        <div className="accc">
+        <div className="acc">
+                
+           
+         <Navigation />
             <div className="tete">
+           
                 <div className="hcont">
-            <h1>Chez Vous, partout et ailleurs</h1>
+            <h1>Chez vous, partout et ailleurs</h1>
             </div>
     
             </div>
             <TitreLocation></TitreLocation>
+    
             </div>
-
+            <Foot></Foot> 
+            </div>
+            
     );
 };
 

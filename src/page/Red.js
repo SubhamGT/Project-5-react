@@ -2,7 +2,7 @@ import React from 'react';
 import '../assets/styles/pages/_Err.scss';
 import Navigation from '../components/Navigation';
 import { NavLink } from 'react-router-dom';
-
+import Foot from '../components/Foot'
 const Red = () => {
   return (
     <div className="err">
@@ -16,7 +16,9 @@ const Red = () => {
           <button className="return-button">Retour à la page d'accueil</button>
         </NavLink>
       </div>
+      <Foot></Foot> 
     </div>
+
   );
 };
 
