@@ -88,7 +88,7 @@ const FicheLogement = () => {
         <div className="togc">
           <Toggle 
             question="Description" 
-            answer={<div>{logement.description}</div>} // Remplacer par un div pour éviter l'imbrication
+            answer={<div>{logement.description}</div>} 
             isOpen={openToggle === 0} // Vérifie si le premier toggle est ouvert
             onToggle={() => handleToggle(0)} // Passe l'index 0 pour le premier toggle
           />

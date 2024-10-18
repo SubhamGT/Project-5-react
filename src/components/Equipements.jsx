@@ -1,6 +1,5 @@
-import React from "react"; // Importation de React
+import React from "react";
 
-// Composant fonctionnel Equipements qui prend une prop 'tagName'
 const Equipements = ({ tagName }) => {
   return (
     <div className="equipment-item">
@@ -10,5 +9,4 @@ const Equipements = ({ tagName }) => {
   );
 };
 
-// Exportation du composant pour qu'il soit utilisé dans d'autres parties de l'application
 export default Equipements;

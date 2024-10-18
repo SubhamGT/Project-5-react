@@ -11,7 +11,7 @@ const Navigation = () => {
           //injecter une class quand est active
           className={({ isActive }) => (isActive ? "aktive" : "")}
         >
-          <li>Acceuil</li>
+          <li>Accueil</li>
         </NavLink>
         <NavLink
           to="/A_Propos"
